@@ -18,14 +18,23 @@
 | Command | Description | Permission |
 | :--- | :--- | :--- |
 | `/upgrades` | Open the island upgrade menu. | `orbz.command.upgrades` |
+| `/upgrades help` | Display help menu for upgrades. | `orbz.command.upgrades` |
 | `/upgrades edit` | Open the editor mode for upgrades. | `orbz.upgrades.edit` |
+| `/orbs` | Display help menu for orbs. | `orbz.command.orbs` |
 | `/orbs balance` | View the island orb balance. | `orbz.command.orbs` |
 | `/orbs give <p> <n>` | Give orbs to an island. | `orbz.admin.give` |
 | `/orbs take <p> <n>` | Remove orbs from an island. | `orbz.admin.set` |
 | `/orbs set <p> <n>` | Set an island's orb balance. | `orbz.admin.set` |
-| `/orbs item <p> <n>` | Give an Orb Voucher item. | `orbz.admin.item` |
+| `/orbs item <p> <n> [m]` | Give an Orb Voucher item. | `orbz.admin.item` |
 | `/orbs reload` | Reload configuration files. | `orbz.admin.reload` |
+| `/orbs admin setlevel <p> <node> <lvl>` | Set island level for node/booster. | `orbz.admin.edit` |
+| `/orbs admin setnode <node> <f> <v>` | Modify node properties via command. | `orbz.admin.edit` |
+| `/orbs admin setgui <f> <v>` | Update global GUI settings (title|size). | `orbz.admin.edit` |
 | `/pickupallgens` | Pick up all generators on the island. | `orbz.pickupallgens` |
+
+### usage details
+- **`/orbs admin setnode`**: supports fields `name`, `lore` (use `|` for lines), `material`, `acts`, `reqs`, `maxlevel`.
+- **`/orbs item`**: optional custom model data ID as fourth argument.
 
 ---
 
