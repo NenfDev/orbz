@@ -1,0 +1,46 @@
+name: Orbz
+main: dev.nenf.orbz.Orbz
+version: ${version}
+api-version: 1.21
+author: Nenf
+softdepend: [SuperiorSkyblock2, AxGens, PlaceholderAPI]
+
+commands:
+  orbs:
+    description: Orbs currency commands.
+    usage: /orbs
+  upgrades:
+    description: Open the upgrades path GUI.
+    usage: /upgrades
+  pickupallgens:
+    description: Pickup all generators on your island.
+    usage: /pickupallgens
+
+permissions:
+  orbz.admin.give:
+    description: Allow giving orbs
+    default: op
+  orbz.admin.set:
+    description: Allow setting orb balances
+    default: op
+  orbz.admin.reload:
+    description: Allow reloading config
+    default: op
+  orbz.admin.edit:
+    description: Allow editing upgrades or boosters
+    default: op
+  orbz.admin.item:
+    description: Allow giving orb vouchers
+    default: op
+  orbz.command.orbs:
+    description: Allow viewing one's balance
+    default: true
+  orbz.command.upgrades:
+    description: Allow opening the upgrade GUI
+    default: true
+  orbz.upgrades.edit:
+    description: Allows using the upgrades GUI editor.
+    default: op
+  orbz.pickupallgens:
+    description: Allows using /pickupallgens.
+    default: true

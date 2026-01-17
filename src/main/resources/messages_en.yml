@@ -1,0 +1,14 @@
+prefix: "<gray>[<aqua>Orbz</aqua>]</gray> "
+
+no-island: "<red>You are not in an island.</red>"
+claimed-orbs: "<green>Claimed <aqua>{amount}</aqua> Orbs into your island pool.</green>"
+orb-balance: "<gray>Island Orbs: <aqua>{amount}</aqua></gray>"
+not-enough-orbs: "<red>Not enough Orbs.</red>"
+node-locked: "<red>That node is locked.</red>"
+node-purchased: "<green>Purchased <aqua>{node}</aqua>.</green>"
+no-permission: "<red>No permission.</red>"
+
+axgens-missing: "<red>AxGens is not installed or API not available.</red>"
+cannot-disband-with-gens: "<red>You cannot delete your island while you have generators present! Use <aqua>/pickupallgens</aqua> to pick them all up.</red>"
+no-gens: "<red>No generators found on your island.</red>"
+picked-up-gens: "<green>Successfully picked up <aqua>{count}</aqua> generators!</green>"

@@ -1,0 +1,48 @@
+language: "en"
+storage:
+  type: "YAML"
+  file: "data.yml"
+  mysql:
+    host: "localhost"
+    port: 3306
+    user: "root"
+    password: ""
+    database: "orbz"
+    pool-settings:
+      maximum-pool-size: 10
+      minimum-idle: 10
+      max-lifetime: 1800000
+      connection-timeout: 5000
+
+orb-voucher:
+  material: "AMETHYST_SHARD"
+  name: "<gradient:#7a5cff:#42d8ff><bold>Orbs</bold></gradient> <gray>(Click to claim)</gray>"
+  lore:
+    - "<gray>Value: <aqua>{amount}</aqua>"
+    - "<dark_gray>Island shared currency</dark_gray>"
+  custom-model-data: 0
+  glow: true
+
+gui:
+  title: "<gold><bold>Island Progress</bold></gold>"
+  size: 27
+  filler:
+    enabled: true
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+    custom-model-data: 0
+
+boosters:
+  EXP:
+    per-level: 0.5
+    max-level: 20
+  SELL:
+    per-level: 0.5
+    max-level: 20
+  SHARDS:
+    per-level: 0.5
+    max-level: 20
+  BITS:
+    per-level: 0.5
+    max-level: 20
+

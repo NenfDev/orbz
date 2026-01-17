@@ -1,0 +1,127 @@
+nodes:
+  # Info
+  info:
+    slot: 4
+    cost-orbs: 0
+    max-level: 0
+    display:
+      material: BOOK
+      name: "<gold><bold>Island Progress</bold></gold>"
+      lore:
+        - "<gray>Island Orbs: <aqua>%orbz_balance%</aqua>"
+        - "<gray>Island Level: <aqua>%superiorskyblock_island_level%</aqua>"
+        - ""
+        - "<gray>Hoppers: <white>%superiorskyblock_island_block_count_HOPPER%</white>"
+        - "<gray>Members: <white>%superiorskyblock_island_members_count%/%superiorskyblock_island_team_limit%</white>"
+
+  # Hoppers
+  hoppers_1:
+    slot: 0
+    cost-orbs: 100
+    display:
+      material: HOPPER
+      name: "<aqua>Hoppers Limit I</aqua>"
+      lore: ["<gray>Increase limit to 10</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} hoppers-limit 2"]
+  hoppers_2:
+    slot: 9
+    cost-orbs: 250
+    prerequisites: ["hoppers_1"]
+    display:
+      material: HOPPER
+      name: "<aqua>Hoppers Limit II</aqua>"
+      lore: ["<gray>Increase limit to 15</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} hoppers-limit 3"]
+  hoppers_3:
+    slot: 18
+    cost-orbs: 650
+    prerequisites: ["hoppers_2"]
+    display:
+      material: HOPPER
+      name: "<aqua>Hoppers Limit III</aqua>"
+      lore: ["<gray>Increase limit to 20</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} hoppers-limit 4"]
+
+  # Members
+  members_1:
+    slot: 1
+    cost-orbs: 75
+    display:
+      material: PLAYER_HEAD
+      name: "<aqua>Members Limit I</aqua>"
+      lore: ["<gray>Increase limit to 4</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} members-limit 2"]
+  members_2:
+    slot: 10
+    cost-orbs: 225
+    prerequisites: ["members_1"]
+    display:
+      material: PLAYER_HEAD
+      name: "<aqua>Members Limit II</aqua>"
+      lore: ["<gray>Increase limit to 5</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} members-limit 3"]
+
+  # Sell
+  sell_1:
+    slot: 2
+    cost-orbs: 150
+    display:
+      material: EMERALD
+      name: "<green>Sell Booster I</green>"
+      lore: ["<gray>Multiplier: x1.5</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} sell-booster 2", "axgen multiplier set {player} 0.5"]
+  sell_2:
+    slot: 11
+    cost-orbs: 350
+    prerequisites: ["sell_1"]
+    display:
+      material: EMERALD
+      name: "<green>Sell Booster II</green>"
+      lore: ["<gray>Multiplier: x2.0</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} sell-booster 3", "axgen multiplier set {player} 1.0"]
+
+  # EXP
+  exp_1:
+    slot: 6
+    cost-orbs: 125
+    display:
+      material: EXPERIENCE_BOTTLE
+      name: "<green>EXP Booster I</green>"
+      lore: ["<gray>Multiplier: x1.5</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} exp-booster 2", "axgen multiplier set {player} 0.5"]
+  exp_2:
+    slot: 15
+    cost-orbs: 300
+    prerequisites: ["exp_1"]
+    display:
+      material: EXPERIENCE_BOTTLE
+      name: "<green>EXP Booster II</green>"
+      lore: ["<gray>Multiplier: x2.0</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} exp-booster 3", "axgen multiplier set {player} 1.0"]
+
+  # Bits
+  bit_1:
+    slot: 7
+    cost-orbs: 125
+    display:
+      material: GOLD_NUGGET
+      name: "<yellow>Bit Booster I</yellow>"
+      lore: ["<gray>Multiplier: x1.5</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} bit-booster 2", "axgen multiplier set {player} 0.5"]
+
+  # Shards
+  shard_1:
+    slot: 8
+    cost-orbs: 125
+    display:
+      material: AMETHYST_SHARD
+      name: "<light_purple>Shard Booster I</light_purple>"
+      lore: ["<gray>Multiplier: x1.5</gray>", "<gray>Cost: <aqua>{cost}</aqua> Orbs</gray>", "<gray>Status: {status}</gray>"]
+    actions: ["islands admin setupgrade {player} shard-booster 2", "axgen multiplier set {player} 0.5"]
+
+locked-item:
+  material: BARRIER
+  name: "<red><bold>Locked</bold></red>"
+  lore: ["<gray>Requirements not met</gray>", "<gray>{reason}</gray>"]
+
+purchased-item-glow: true
